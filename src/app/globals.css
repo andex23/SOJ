@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-soj-bg: #0a0a0a;
+  --color-soj-text: #d4d4d4;
+  --color-soj-muted: #737373;
+  --color-soj-border: #262626;
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+@layer base {
+  html {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--color-soj-bg);
+    color: var(--color-soj-text);
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: inherit;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  strong, b, h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+  }
+
+  button {
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+  }
+
+  input, select, textarea {
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
