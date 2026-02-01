@@ -13,15 +13,15 @@ interface Props {
 const STATUS_OPTIONS: ProductStatus[] = ['available', 'preorder', 'sold', 'archived']
 
 const inputStyle: React.CSSProperties = {
-  background: 'none',
-  border: '1px solid #262626',
+  background: '#fff',
+  border: '1px solid #d0d0d0',
   padding: '0.5rem',
-  color: '#d4d4d4',
+  color: '#333',
   width: '100%',
 }
 
 const labelStyle: React.CSSProperties = {
-  color: '#737373',
+  color: '#8a8a8a',
   fontSize: '0.875rem',
   display: 'block',
   marginBottom: '0.5rem',
@@ -115,7 +115,7 @@ export default function AdminProductForm({ product }: Props) {
       </div>
 
       <div style={{ marginBottom: '1.5rem' }}>
-        <label style={labelStyle}>PRICE (kobo)</label>
+        <label style={labelStyle}>PRICE (USD cents)</label>
         <input
           type="number"
           value={price}
@@ -176,7 +176,7 @@ export default function AdminProductForm({ product }: Props) {
       </div>
 
       {error && (
-        <p style={{ color: '#d4d4d4', marginBottom: '1.5rem' }}>{error}</p>
+        <p style={{ color: '#8b4545', marginBottom: '1.5rem' }}>{error}</p>
       )}
 
       <div style={{ display: 'flex', gap: '1rem' }}>
@@ -184,9 +184,9 @@ export default function AdminProductForm({ product }: Props) {
           type="submit"
           disabled={isPending}
           style={{
-            background: 'none',
-            border: '1px solid #262626',
-            color: '#d4d4d4',
+            background: '#333',
+            border: '1px solid #333',
+            color: '#f0eeeb',
             padding: '0.75rem 1.5rem',
             fontSize: '1rem',
             opacity: isPending ? 0.5 : 1,
@@ -200,7 +200,7 @@ export default function AdminProductForm({ product }: Props) {
           style={{
             background: 'none',
             border: 'none',
-            color: '#737373',
+            color: '#8a8a8a',
             fontSize: '1rem',
             textDecoration: 'underline',
             textUnderlineOffset: '3px',

@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
         <p style={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}>
           ADMIN ACCESS
         </p>
-        <p style={{ color: '#737373' }}>
+        <p style={{ color: '#8a8a8a' }}>
           ———————————
         </p>
       </div>
@@ -47,7 +47,7 @@ export default function AdminLoginPage() {
         <div style={{ marginBottom: '1.5rem' }}>
           <label
             style={{
-              color: '#737373',
+              color: '#8a8a8a',
               fontSize: '0.875rem',
               display: 'block',
               marginBottom: '0.5rem',
@@ -63,10 +63,10 @@ export default function AdminLoginPage() {
             onChange={(e) => setEmail(e.target.value)}
             required
             style={{
-              background: 'none',
-              border: '1px solid #262626',
+              background: '#fff',
+              border: '1px solid #d0d0d0',
               padding: '0.5rem',
-              color: '#d4d4d4',
+              color: '#333',
               width: '100%',
             }}
           />
@@ -75,7 +75,7 @@ export default function AdminLoginPage() {
         <div style={{ marginBottom: '2rem' }}>
           <label
             style={{
-              color: '#737373',
+              color: '#8a8a8a',
               fontSize: '0.875rem',
               display: 'block',
               marginBottom: '0.5rem',
@@ -91,26 +91,26 @@ export default function AdminLoginPage() {
             onChange={(e) => setPassword(e.target.value)}
             required
             style={{
-              background: 'none',
-              border: '1px solid #262626',
+              background: '#fff',
+              border: '1px solid #d0d0d0',
               padding: '0.5rem',
-              color: '#d4d4d4',
+              color: '#333',
               width: '100%',
             }}
           />
         </div>
 
         {error && (
-          <p style={{ color: '#d4d4d4', marginBottom: '1.5rem' }}>{error}</p>
+          <p style={{ color: '#8b4545', marginBottom: '1.5rem' }}>{error}</p>
         )}
 
         <button
           type="submit"
           disabled={loading}
           style={{
-            background: 'none',
-            border: '1px solid #262626',
-            color: '#d4d4d4',
+            background: '#333',
+            border: '1px solid #333',
+            color: '#f0eeeb',
             padding: '0.75rem 1.5rem',
             fontSize: '1rem',
             opacity: loading ? 0.5 : 1,
